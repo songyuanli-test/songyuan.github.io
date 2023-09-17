@@ -36,18 +36,20 @@
 <div id="toptitle">
   <h1>Research in a Nutshell <font color='red'>(To be Updated)</font>
 </div>
-<p>* Last-update time: May 2021.</p>
+<p>* As of September 2023.</p>
 <p>My research interests include</p>
 <ul>
-<li><p><b>Service Selection, and Composition</b>: QoS evaluation and optimization of workflows, Concurrent service selection based on service ecosystem</p>
+<li><p><b>Web Service Selection, and Composition</b>: QoS evaluation and optimization of workflows, Concurrent service selection based on service ecosystem</p>
 </li>
-<li><p><b>Resource Pricing, and Demand Allocation</b>: QoS awareness, Resource management, Task scheduling, Market-oriented cloud resource pricing strategy, Demand response </p>
+<li><p><b>Cloud Resource Pricing, and Demand Allocation</b>: QoS awareness, Resource management, Task scheduling, Market-oriented cloud resource pricing strategy, Demand response </p>
 </li>
 <li><p><b>Fog Computing, and Mobile Edge Computing</b>: QoS/QoE awareness, Edge resource management, Task routing & scheduling, Multi-user/service provider gaming, Efficient/Decentralized solution </p>
 </li>
+<li><p><b>Edge Intelligence</b>: Synergistic DNN Inference and Training, Multi-exit DNN Inference at Edge, Edge-AI Market Design</p>
+</li>
 </ul>
 
-<h2>Service Selection, and Composition</h2>
+<h2>Web Service Selection, and Composition</h2>
 <p align="justify">The increasing momentum of service-oriented architecture has led to the emergence of divergent delivered services, where service selection is meritedly required to obtain the target service fulfilling the requirements from both users and service providers. I target to fill the research gap in the case where service requests from multiple users are performed simultaneously by a certain set of shared candidate services, although many existing works have extensively handled the issue of service selection. Meanwhile, I consider the constraints enforced on the context of service selection, such as, service placement location and contracts between users and service providers. In this sense, I propose a QoS-aware service selection scheme with constraints from a fairness aspect, with the objective of achieving max-min fairness across multiple service requests. In specific, I formulate this problem as a lexicographical maximization problem, which is yet far from trivial to deal with practically due to its inherently multi-objective and discrete nature. Given this, I develop an efficient fairness-aware algorithm for concurrent service selection, whose basic idea is to iteratively solve the single-objective subproblems by transforming them into linear programming problems. This work has been published in the IEEE ICWS 2019.</p>
 <table class="imgtable"><tr><td align="center">
 <img src="files/service_selection.png" alt="alt text" height="325px" />&nbsp;</td>
@@ -57,7 +59,7 @@
 </li>
 </ol>
 
-<h2>Resource Pricing, and Demand Allocation</h2>
+<h2>Cloud Resource Pricing, and Demand Allocation</h2>
 <p align="justify">For a cloud service provider (CSP), it necessitates an emerging cloud ecosystem to both consolidate numerous cloud users and earn great revenue from users, further gaining its market share and achieving profitablity. Therefore, I design a price-incentive resource auction mechanism in cloud environment. In response to the cloud resource price, each user synthesizes her bidding budget and QoS requirement, and purchases cloud resources according to her resource demand in a strategic manner. The CSP, meanwhile, can regulate the resource demands of users through conducting a market-oriented pricing strategy, against too low prices to cover the operational costs or too high prices resulting in user churn. My proposed price-incentive resource auction mechanism targets to either maximize the CSP's service revenue, or stimulate maximum users willing to purchase cloud resources, on the premise of a minimum proﬁt rate guaranteed for the CSP. It is also expected to provide budge balance and truthfulness guarantee, and satisfy the envy-freeness. To carry out the above objectives, I define the user utility function reﬂecting the complicated user interest, and formulate our resource pricing and auction problem as a BP problem. Regarding the NP-hardness of optimization problem and the non-convexity of user utility, I present the counterpart computational-efﬁcient heuristic algorithm. The above work is presented in two research papers differentially standing in the place of cloud users or CSP, one of which is accepted by the IEEE Transactions on Network and Service Management (TNSM) while the other one is considered for acceptance in the IEEE Transactions on Network Science and Enginerring (TNSE).</p>
 <table class="imgtable"><tr align="center"><td>
 <img src="files/resource_pricing.png" alt="alt text" height="325px" />&nbsp;</td>
